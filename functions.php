@@ -44,9 +44,11 @@ if ( ! function_exists( 'veropeluqueria_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'veropeluqueria' ),
+			'menu-1' => esc_html__( 'Primary', 'carrete' ),
+			'menu-2' => esc_html__( 'Footer', 'lepon' ),
+			'menu-3' => esc_html__( 'Lepon', 'lepon' ),
+			'menu-4' => esc_html__( 'Vero', 'veropeluqueria' )
 		) );
-
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -158,4 +160,59 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                                MIS FUNCIONES
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/**
+ * Mostrar los Dashicons auque no estes registrado en Wordpress
+ */
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+function load_dashicons_front_end() {
+  wp_enqueue_style( 'dashicons' );
+}
+
+/**
+* Mover los javascripts al footer para que no salte el fallo en google page speed de
+* Eliminar el JavaScript que bloquea la visualización y el CSS del contenido de la mitad superior de la página
+*/
+function footer_enqueue_scripts() {
+   remove_action('wp_head', 'wp_print_scripts');
+   remove_action('wp_head', 'wp_print_head_scripts', 9);
+   remove_action('wp_head', 'wp_enqueue_scripts', 1);
+   add_action('wp_footer', 'wp_print_scripts', 5);
+   add_action('wp_footer', 'wp_enqueue_scripts', 5);
+   add_action('wp_footer', 'wp_print_head_scripts', 5);
+   }
+   add_action('after_setup_theme', 'footer_enqueue_scripts');
+
+/**
+* Registro de una nueva area para widgets
+
+
+* register_sidebar(
+*  array(
+*	   'name' => 'Widgets Contacto',
+*	   'id' => 'widgets-contacto',
+*	   'description' => 'Área de widgets que aparece en la pagina de contacto',
+*	   'before_widget' => '<section id="%1$s" class="widget %2$s">',
+*	   'after_widget'  => '</section>',
+*	   'before_title'  => '<h3 class="widget-title">',
+*	   'after_title'   => '</h3>',
+*  )
+* );
+*/
+
+/**
+* Funcion para mostrar Apple Touch Icon
+*/
+
+function ejr_apple_touch_icon () {
+   $appletouchicon = '
+	 <link rel="apple-touch-icon" href="http://alexgarciagil.com/wp-content/uploads/apple-touch-icon.png" />
+	 <link rel="apple-touch-icon" sizes="180x180" href="http://alexgarciagil.com/wp-content/uploads/apple-touch-icon.png" />';
+	 
+   echo $appletouchicon;
+   }
+add_action ('wp_head', 'ejr_apple_touch_icon');
 

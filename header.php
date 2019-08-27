@@ -25,31 +25,27 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'veropeluqueria' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$veropeluqueria_description = get_bloginfo( 'description', 'display' );
-			if ( $veropeluqueria_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $veropeluqueria_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+
+		<div class="antesHeader">
+			<div class="social">
+				<a href="mailto:geser.geser51@gmail.com" target="_blank" rel="nofollow"><span class="dashicons dashicons-email-alt"></span></a>
+				<a href="https://www.facebook.com/geseradvance51/" target="_blank" rel="nofollow"><span class="dashicons dashicons-facebook"></span></a>
+				<a href="https://twitter.com/GAdvance51" target="_blank" rel="nofollow" ><span class="dashicons dashicons-twitter"></span></a>
+				<a href="https://plus.google.com/u/0/117401806160374771566" target="_blank" rel="nofollow" ><span class="dashicons dashicons-googleplus"></span></a>
+			</div>	
+			<div class="horario">
+				<p>LUN-SÁB: 8:30-14:00 y 16:00-20:00  /</p>
+				<p>  DOM: CERRADO  /</p>
+				<p> <a href="">RESERVAR</a></p>
+			</div>
+		</div>
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'veropeluqueria' ); ?></button>
+		<a href="http://plantilla-web-simple.local/inicio/"><img class="imagenLogo" src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/Vero-Peluqueria.png" alt="Logo de la web" /></a>
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
+				'theme_location' => 'menu-4',
+				'menu_id'        => 'Vero',
 			) );
 			?>
 		</nav><!-- #site-navigation -->
