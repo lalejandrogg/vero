@@ -19,7 +19,16 @@ get_header();
 		<main id="main" class="site-main">
 
 		<img class="imagenInicio" src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/Vero.png" alt="Logo de la web" />
-		
+		<div class="primeraParteHome">
+			<h1>VERO PELUQUERIA UNISEX</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet deleniti optio,
+			    incidunt facilis accusamus ab laboriosam. Rerum voluptates delectus ducimus quam earum, a ratione, 
+				autem laboriosam velit natus ab.
+			</p>
+			
+		</div>
+		<h2>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

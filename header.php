@@ -31,7 +31,6 @@
 				<a href="mailto:geser.geser51@gmail.com" target="_blank" rel="nofollow"><span class="dashicons dashicons-email-alt"></span></a>
 				<a href="https://www.facebook.com/geseradvance51/" target="_blank" rel="nofollow"><span class="dashicons dashicons-facebook"></span></a>
 				<a href="https://twitter.com/GAdvance51" target="_blank" rel="nofollow" ><span class="dashicons dashicons-twitter"></span></a>
-				<a href="https://plus.google.com/u/0/117401806160374771566" target="_blank" rel="nofollow" ><span class="dashicons dashicons-googleplus"></span></a>
 			</div>	
 			<div class="horario">
 				<p>LUN-SÁB: 8:30-14:00 y 16:00-20:00  /</p>
@@ -41,7 +40,8 @@
 		</div>
 
 		<nav id="site-navigation" class="main-navigation">
-		<a href="http://plantilla-web-simple.local/inicio/"><img class="imagenLogo" src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/Vero-Peluqueria.png" alt="Logo de la web" /></a>
+			<a href="http://plantilla-web-simple.local/inicio/"><img class="imagenLogo" src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/Vero-Peluqueria.png" alt="Logo de la web" /></a>
+			<button style="display: none;" class="menu-toggle dashicons dashicons-menu" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'Vero' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-4',

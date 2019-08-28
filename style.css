@@ -669,8 +669,12 @@ a:hover, a:active {
 }
 
 .main-navigation .menu-vero-container{
-	width: 50%;
-	margin: 0px auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
 }
 
 .main-navigation ul{
@@ -700,8 +704,6 @@ a:hover, a:active {
 #Vero li.current_page_item a{
 	color:#497eff;
 }
-
-
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
