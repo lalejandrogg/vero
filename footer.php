@@ -21,6 +21,9 @@
 				printf( esc_html__( 'Proudly powered by %s', 'veropeluqueria' ), 'WordPress' );
 				?>
 			</a>
+
+			<div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div><div>Iconos diseñados por <a href="https://www.flaticon.es/autores/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.es/"     title="Flaticon">www.flaticon.com</a></div>
+			
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */

@@ -975,3 +975,82 @@ INICIO
 .imagenInicio{
 	width: 100%;
 }
+/*******************************/
+.tituloHome{
+	width: 100%;
+	text-align: center;
+	margin-top: 0px;
+	color: #497eff;
+	margin-bottom: 30px;
+}
+.primeraParteHome{
+	display: flex;
+	justify-content: space-around;
+}
+.imagenPerfil{
+	width: 45%;
+	height: 350px;
+}
+.primeraParteHome p{
+	width: 45%;
+	
+}
+/**********************************/
+.titulo2Home{
+	width: 100%;
+	text-align: center;
+	margin-top: 0px;
+	color: #497eff;
+	margin-top: 40px;
+}
+.linea{
+	width: 5%;
+	margin: 0px auto;
+	border-bottom: 2px solid #000;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.serviciosHome{
+	width: 70%;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+}
+.servicioHome{
+	text-align: center;
+	padding: 20px;
+}
+.iconoServicios{
+	width: 40px;
+}
+.tituloServicio{
+
+}
+.lineaIconos{
+	border-bottom: 2px solid #497eff;
+	width: 20%;
+	margin: 0px auto;
+}
+.textoServicio{
+
+}
+
+/*************************************/
+.trabajosHome{
+	display: flex;
+	flex-flow: wrap;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.trabajosHome img{
+	height: 400px;
+	width: 400px;
+}
+
+
+
