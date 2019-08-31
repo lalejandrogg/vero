@@ -24,12 +24,15 @@ get_header();
 
 			<div class="primeraParteHome">
 				<p>
+					<span class="dashicons dashicons-editor-quote"></span>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet deleniti optio,
 					incidunt facilis accusamus ab laboriosam. Rerum voluptates delectus ducimus quam earum, a ratione, 
 					autem laboriosam velit natus ab.
+					<span class="dashicons dashicons-editor-quote rotada"></span>
 				</p>
-				
+					
 				<img class="imagenPerfil" src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/shari-sirotnak-oM5YoMhTf8E-unsplash.jpg" alt="Logo de la web" />
+
 			</div>
 
 			<h2 class="titulo2Home">SERVICIOS</h2>
@@ -80,14 +83,14 @@ get_header();
 			<h2 class="titulo2Home">TRABAJOS</h2>
 			<div class="linea"></div>
 
-			<div class="trabajosHome">
+			<a href="https://www.marca.com"><div class="trabajosHome">
 				<img  src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/angelo-pantazis-A8WIBd73a6E-unsplash.jpg" alt="Logo de la web" />
 				<img  src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/george-bohunicky-qJKT2rMU0VU-unsplash.jpg" alt="Logo de la web" />
 				<img  src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/kareya-saleh-tLKOj6cNwe0-unsplash.jpg" alt="Logo de la web" />
 				<img  src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/tammie-allen-KIg7V5AbTpw-unsplash.jpg" alt="Logo de la web" />
 				<img  src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/angelo-pantazis-A8WIBd73a6E-unsplash.jpg" alt="Logo de la web" />
 				<img  src="http://plantilla-web-simple.local/wp-content/uploads/2019/08/kareya-saleh-tLKOj6cNwe0-unsplash.jpg" alt="Logo de la web" />
-			</div>
+			</div></a>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

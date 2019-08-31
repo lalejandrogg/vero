@@ -616,7 +616,7 @@ a:hover, a:active {
 	flex-direction: row;	
 }
 
-.social{
+.socialHeader{
   width: 50%;
   display: flex;
   flex-wrap: nowrap;
@@ -627,7 +627,7 @@ a:hover, a:active {
   margin-left: 10px;
 }
 
-.social a{
+.socialHeader a{
 	flex-basis: 30px;
 	text-decoration: none;
 	color: #fff;
@@ -698,11 +698,11 @@ a:hover, a:active {
 }
 
 .main-navigation a:hover{
-  border-bottom: 2px solid #497eff;
+  border-bottom: 2px solid #3B63F4;
 }
 
 #Vero li.current_page_item a{
-	color:#497eff;
+	color:#3B63F4;
 }
 /*--------------------------------------------------------------
 # Accessibility
@@ -980,20 +980,31 @@ INICIO
 	width: 100%;
 	text-align: center;
 	margin-top: 0px;
-	color: #497eff;
+	color: #3B63F4;
 	margin-bottom: 30px;
 }
 .primeraParteHome{
 	display: flex;
 	justify-content: space-around;
+	align-content: center;
 }
 .imagenPerfil{
 	width: 45%;
 	height: 350px;
+	border: 1px solid #000;
 }
 .primeraParteHome p{
 	width: 45%;
-	
+	margin-top: 100px;
+	text-align: center;
+}
+.primeraParteHome p span{
+	font-size: 25px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+p .rotada{
+	transform: rotate(-180deg);
 }
 /**********************************/
 .titulo2Home{
@@ -1027,7 +1038,7 @@ INICIO
 	width: 40px;
 }
 .lineaIconos{
-	border-bottom: 2px solid #497eff;
+	border-bottom: 2px solid #3B63F4;
 	width: 20%;
 	margin: 0px auto;
 }
@@ -1043,7 +1054,120 @@ INICIO
 .trabajosHome img{
 	height: 400px;
 	width: 400px;
+	border: 2px solid #000;
 }
 
+/***********************************************
+FOOTER
+***********************************************/
+.site-info{
+	display: flex;
+	flex-flow: nowrap;
+	flex-direction: row;
+	align-content: center;
+	justify-content: center;
+	border: 2px solid #000;
+	width: 100%;
+	height: 150px;
+	margin-bottom: 30px;
+}
+.imagenLogoFooter{
+	width: 150px;
+	height: 130px;
+	margin-top: 10px;
+}
+.site-info p{
+	margin-top: 60px;
+	margin-left: 30px;
+	color: #000;
+	font-size: 12px;
+}
+.socialFooter{
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+.socialFooter a{
+	color: #000;
+	text-decoration: none;
+	margin-right: 15px;
+}
+.socialFooter a:hover{
+	color: #3B63F4;
+}
+.contactoFooter{
+	display: flex;
+	flex-flow: nowrap;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	font-size: 12px;
+	margin-left: 50px;
+}
+.imagenQRFooter{
+	width: 120px;
+	height: 120px;
+	margin: 0px auto;
+}
+.contactoFooter p{
+	margin: 0px auto;
+}
+#footer{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	font-size: 16px;
+	margin-top: 25px;
+}
+#footer li{
+	height: 30px;
+	margin-right: 10px;
+}
 
+#footer a{
+	text-decoration: none;
+	color: #000;
+}
+
+#footer a:hover{
+	color: #3B63F4;
+}
+
+.horarioFooter{
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+.horarioFooter p{
+	display: flex;
+	flex-direction: column;
+	margin: 0px auto;
+}
+.horarioFooter .tituloHorarioFooter{
+	font-size: 20px;
+}
+.citaFooter{
+	margin-top: 10px;
+}
+.horarioFooter a{
+	color: #000;
+}
+.horarioFooter a:hover{
+	color: #3B63F4;
+}
+.atribuciones{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	color:#000;
+	margin-right: 20px;
+	margin-bottom: 0px;
+}	
+.atribuciones a{
+	color:#000;
+}
 

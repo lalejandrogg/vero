@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 
 		<div class="antesHeader">
-			<div class="social">
+			<div class="socialHeader">
 				<a href="mailto:geser.geser51@gmail.com" target="_blank" rel="nofollow"><span class="dashicons dashicons-email-alt"></span></a>
 				<a href="https://www.facebook.com/geseradvance51/" target="_blank" rel="nofollow"><span class="dashicons dashicons-facebook"></span></a>
 				<a href="https://twitter.com/GAdvance51" target="_blank" rel="nofollow" ><span class="dashicons dashicons-twitter"></span></a>
